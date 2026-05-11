@@ -2,19 +2,6 @@
 
 A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
 <img width="236" height="290" alt="Submit Tugas Berhasil" src="https://github.com/user-attachments/assets/116f4e19-d3e4-41ea-965b-f1f1bb22e927" />
 
 <img width="960" height="540" alt="Submit Tugas" src="https://github.com/user-attachments/assets/d8df6fc8-22cc-4c58-a216-4fb8ef271897" />
@@ -31,4 +18,5 @@ samples, guidance on mobile development, and a full API reference.
 
 <img width="960" height="540" alt="postman login" src="https://github.com/user-attachments/assets/fc399cbe-f303-4dc9-9985-5c2ae7f2b1b8" />
 
+<img width="960" height="540" alt="mencoba mengguna API submit Tugas" src="https://github.com/user-attachments/assets/260a8087-a5c3-4f1c-b798-137b6ced19ce" />
 
