@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import '../services/auth_service.dart';
 import '../helper/storage_helper.dart';
 import 'home_page.dart';
-import '../widgets/custom_textfield.dart';
-import '../widgets/custom_button.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -96,23 +94,56 @@ class _LoginPageState extends State<LoginPage> {
                     padding: const EdgeInsets.all(20),
                     child: Column(
                       children: [
-                        CustomTextField(
+                        TextField(
                           controller: nimController,
-                          labelText: 'Username (NIM)',
-                          prefixIcon: Icons.person_outline,
+                          decoration: InputDecoration(
+                            labelText: 'Username (NIM)',
+                            prefixIcon: const Icon(Icons.person_outline),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
                         ),
                         const SizedBox(height: 20),
-                        CustomTextField(
+                        TextField(
                           controller: passwordController,
-                          labelText: 'Password (NIM)',
-                          prefixIcon: Icons.lock_outline,
                           obscureText: true,
+                          decoration: InputDecoration(
+                            labelText: 'Password (NIM)',
+                            prefixIcon: const Icon(Icons.lock_outline),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
                         ),
                         const SizedBox(height: 30),
-                        CustomButton(
-                          onPressed: login,
-                          label: 'Login',
-                          isLoading: isLoading,
+                        SizedBox(
+                          width: double.infinity,
+                          height: 50,
+                          child: ElevatedButton(
+                            onPressed: isLoading ? null : login,
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                            ),
+                            child: isLoading
+                                ? const SizedBox(
+                                    width: 20,
+                                    height: 20,
+                                    child: CircularProgressIndicator(
+                                      strokeWidth: 2,
+                                      color: Colors.white,
+                                    ),
+                                  )
+                                : const Text(
+                                    'Login',
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                          ),
                         ),
                       ],
                     ),

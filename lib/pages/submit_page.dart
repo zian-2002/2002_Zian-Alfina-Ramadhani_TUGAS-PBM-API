@@ -56,9 +56,9 @@ class _SubmitPageState extends State<SubmitPage> {
         const SnackBar(content: Text('Tugas berhasil disubmit 🎉')),
       );
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Submit gagal: ${response.body}')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('Submit gagal: ${response.body}')));
     }
   }
 

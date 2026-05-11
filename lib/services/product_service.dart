@@ -19,7 +19,7 @@ class ProductService {
 
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
-      
+
       dynamic productsData;
       if (data['data'] is List) {
         productsData = data['data'];

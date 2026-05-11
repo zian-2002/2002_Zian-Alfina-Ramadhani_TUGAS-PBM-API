@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
       if (token != null) {
         final service = ProductService();
         final result = await service.getProducts(token);
-        
+
         print('DEBUG: Token used: $token');
         print('DEBUG: Products found: ${result.length}');
 
