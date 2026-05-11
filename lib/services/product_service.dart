@@ -21,7 +21,6 @@ class ProductService {
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
       
-      // Coba cari list di data['data'] atau data['data']['products']
       dynamic productsData;
       if (data['data'] is List) {
         productsData = data['data'];
