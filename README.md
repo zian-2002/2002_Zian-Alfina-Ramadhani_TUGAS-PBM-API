@@ -16,7 +16,7 @@ A new Flutter project.
 5. Tampilan Mobile Tambah Produk
 <img width="320" height="335" alt="tambah produk" src="https://github.com/user-attachments/assets/d4f9777b-6bbc-4cd4-afe5-f08b5b9efcd3" />
 
-6. Mencoba Api Login/token menggunakan postmant
+6. Memasukkan token menggunakan postmant
 <img width="960" height="540" alt="postman token" src="https://github.com/user-attachments/assets/3f688fdc-39c9-4df8-8710-f5d98122d79a" />
 
 7. Mencoba Api tambah produk menggunakan postmant
